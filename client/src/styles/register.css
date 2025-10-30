@@ -1,0 +1,111 @@
+/* ==== Register Page Styles (Artsy + Royal Green Theme) ==== */
+
+body {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .auth-container {
+    max-width: 420px;
+    margin: 60px auto;
+    padding: 40px 30px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 18px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Decorative abstract blob */
+  .auth-container::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    /* background: #014421; */
+    border-radius: 50%;
+    opacity: 0.3;
+    z-index: 0;
+    filter: blur(30px);
+  }
+  
+  .auth-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #FFFFFF;
+    z-index: 1;
+    position: relative;
+  }
+  
+  /* Form elements */
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .auth-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #FFFFFF;
+  }
+  
+  .auth-form input,
+  .auth-form select {
+    padding: 12px 10px;
+    margin-bottom: 20px;
+    border: 1px solid #014421;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  
+  .auth-form input:focus,
+  .auth-form select:focus {
+    outline: none;
+    border-color: #ffffff;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Register button */
+  .auth-btn {
+    padding: 12px;
+    background-color: #014421;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth-btn:hover {
+    background-color: #012d18;
+  }
+  
+  /* Footer link */
+  .auth-footer {
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .auth-footer a {
+    color: #FFFFFF;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .auth-footer a:hover {
+    color: #014421;
+  }
+  

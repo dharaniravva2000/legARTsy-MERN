@@ -1,0 +1,208 @@
+:root {
+    --royal-green: #014421;
+    --royal-white: #ffffff;
+    --royal-black: #1c1c1c;
+  }
+  
+  /* General page styling */
+  .collections-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--royal-black);
+  }
+  
+  /* Header */
+  .collections-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  
+  .collections-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.3rem;
+    color: var(--royal-green);
+  }
+  
+  .collections-header .subtext {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  /* Grid for the art cards preview */
+  .art-collection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2rem;
+    align-items: stretch; /* Add this to stretch all items equally */
+  }
+  
+  
+  .art-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* make it stretch the full grid item height */
+  }
+  
+  
+  
+  .art-card:hover {
+    box-shadow: 0 6px 16px rgb(0 0 0 / 0.15);
+  }
+  
+  .art-card img {
+    width: 100%;
+    height: 220px; /* increased height */
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .art-card .info {
+    padding: 0.8rem 1rem; /* slightly reduced padding */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .art-card h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1.5rem; /* slightly bigger */
+    color: var(--royal-green);
+  }
+  
+  .art-card p {
+    flex-grow: 1;
+    font-size: 1rem; /* slightly bigger */
+    color: #555;
+    margin-bottom: 0.8rem; /* slightly less margin */
+  }
+  
+  .art-card button {
+    background-color: var(--royal-green);
+    border: none;
+    color: var(--royal-white);
+    padding: 0.65rem 1.3rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1rem;
+    align-self: flex-start;
+    transition: background-color 0.25s ease;
+  }
+  
+  .art-card button:hover {
+    background-color: #012b15;
+  }
+  
+  /* Updated Collection Section */
+  /* Make border top full width by moving border to a pseudo element */
+  .collection-section {
+    background-color: var(--royal-white);
+    padding: 40px 20px;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .collection-section::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 3px; /* slightly thicker */
+    background-color: var(--royal-green);
+    z-index: 10;
+  }
+  
+  .collection-section h2 {
+    text-align: center;
+    color: var(--royal-green);
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  
+  .product-card {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f9f9f9;
+    border: 1px solid var(--royal-black);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto 5px;
+    max-width: 900px;
+  }
+  
+  .product-card img {
+    width: 100%;
+    max-width: 250px;
+    object-fit: cover;
+  }
+  
+  .product-card .details {
+    padding: 20px;
+    flex: 1;
+    color: var(--royal-black);
+  }
+  
+  .product-card h3 {
+    color: var(--royal-green);
+    margin-bottom: 10px;
+  }
+  
+  .product-card p {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  
+  .action-buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .action-buttons button {
+    background-color: var(--royal-green);
+    color: var(--royal-white);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .action-buttons button:hover {
+    background-color: #012b15;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .product-card {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .product-card .details {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  
+    .art-card {
+      max-width: 100%;
+    }
+  
+    .art-card img {
+      height: 200px;
+    }
+  }
+  

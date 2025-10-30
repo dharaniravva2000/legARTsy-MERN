@@ -1,0 +1,30 @@
+.event-card {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid #014421;
+    border-radius: 4px;
+  }
+  
+  .event-card h3 {
+    color: #014421;
+    margin-bottom: 0.5rem;
+  }
+  
+  .event-card p {
+    color: #000000;
+  }
+  
+  .event-card button {
+    background-color: #014421;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border: none;
+    margin-top: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .event-card button:hover {
+    background-color: #000000;
+  }
+  

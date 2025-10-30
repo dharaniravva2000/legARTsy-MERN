@@ -1,0 +1,17 @@
+.store-location {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 6px;
+  }
+  
+  .store-location h3 {
+    color: #014421;
+    margin-bottom: 0.5rem;
+  }
+  
+  .store-location p {
+    margin-bottom: 1rem;
+  }
+  

@@ -1,0 +1,88 @@
+:root {
+    --royal-green: #014421;
+    --royal-black: #000000;
+    --royal-white: #ffffff;
+  }
+  
+  /* Container styling */
+  .auth-container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: var(--royal-white);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(1, 68, 33, 0.1);
+    text-align: center;
+    color: var(--royal-black);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Heading */
+  .auth-container h2 {
+    margin-bottom: 20px;
+    color: var(--royal-green);
+  }
+  
+  /* Form styling */
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Inputs */
+  .auth-form input {
+    padding: 10px;
+    border: 1px solid var(--royal-green);
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  /* Login button */
+  .auth-btn {
+    background-color: var(--royal-green);
+    color: var(--royal-white);
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth-btn:hover {
+    background-color: #012b15;
+  }
+  
+  /* Google Sign-in button */
+  .google-btn {
+    background-color: #db4437;
+    color: var(--royal-white);
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .google-btn:hover {
+    background-color: #b4372d;
+  }
+  
+  /* Footer */
+  .auth-footer {
+    margin-top: 20px;
+    font-size: 0.95rem;
+  }
+  
+  .auth-footer a {
+    color: var(--royal-green);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .auth-footer a:hover {
+    text-decoration: underline;
+  }
+  
