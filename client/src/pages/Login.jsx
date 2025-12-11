@@ -19,7 +19,7 @@ function Login() {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:3001/api/auth/login', form);
+      const res = await axios.post('https://legartsy-backend-3bwz.onrender.com', form);
       alert(res.data.message);
 
       // Optional: Store token or user data in localStorage
