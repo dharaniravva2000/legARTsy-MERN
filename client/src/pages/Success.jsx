@@ -22,7 +22,7 @@ const Success = () => {
         const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
         const res = await axios.post(
-          'http://localhost:3001/api/orders/create',
+          'https://legartsy-backend-3bwz.onrender.come',
           { items: cart, total },
           { headers: { Authorization: `Bearer ${token}` } }
         );
